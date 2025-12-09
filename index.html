@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Instituto Luz do Caminho - Plataforma</title>
+  <meta name="description" content="Plataforma web do Instituto Luz do Caminho com informações, projetos e cadastro de voluntários.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS existente da EP2 -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo-link">
+        <img src="img/logo.png" alt="Logotipo do Instituto Luz do Caminho" width="120">
+      </a>
+
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#home" data-route="#home">Início</a></li>
+          <li><a href="#projetos" data-route="#projetos">Projetos</a></li>
+          <li><a href="#cadastro" data-route="#cadastro">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Área onde as "páginas" da SPA serão carregadas -->
+  <main id="app" class="app-container" aria-live="polite"></main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Instituto Luz do Caminho. Todos os direitos reservados.</p>
+    <p>
+      <a href="#projetos" data-route="#projetos">Conheça nossos projetos</a> |
+      <a href="#cadastro" data-route="#cadastro">Seja voluntário ou doador</a>
+    </p>
+  </footer>
+
+  <!-- JS da SPA -->
+  <script src="js/templates.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
