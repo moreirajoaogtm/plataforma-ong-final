@@ -1,0 +1,1 @@
+Arquivo criado para desenvolvimento de acessibilidade (WCAG 2.1 AA).
